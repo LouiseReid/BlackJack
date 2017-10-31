@@ -39,6 +39,10 @@ public class Player {
         return playerHandValue;
     }
 
+    public void setPlayerHandValue(int playerHandValue) {
+        this.playerHandValue = playerHandValue;
+    }
+
     public Card playCard(){
         return cards.remove(0);
     }

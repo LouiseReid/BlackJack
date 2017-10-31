@@ -10,7 +10,7 @@ import static android.R.attr.y;
  * Created by louisereid on 31/10/2017.
  */
 
-public class Game {
+public class BlackJackGame {
 
 
     Player player;
@@ -19,7 +19,7 @@ public class Game {
     Card card;
 
 
-    public Game(Player player, Dealer dealer, Deck deck) {
+    public BlackJackGame(Player player, Dealer dealer, Deck deck) {
         this.player = player;
         this.dealer = dealer;
         this.deck = deck;
@@ -99,6 +99,17 @@ public class Game {
                 }
             }
             if (player.aceCheck() == false) {
+            }
+        }
+
+        public void playAgain(){
+            System.out.println("Do you want to play again?");
+            Scanner scanner = new Scanner(System.in);
+            String playerResponce = scanner.nextLine();
+            if(playerResponce.equals("y")){
+                player.getCards().clear();
+                dealer.getCards().clear();
+                start();
             }
         }
 }

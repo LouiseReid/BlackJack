@@ -4,7 +4,7 @@ package com.example.louisereid.snap;
  * Created by louisereid on 27/10/2017.
  */
 
-public class Runner {
+public class SnapRunner {
 
     public static void main(String[] args) {
         Player player = new Player("Louise");

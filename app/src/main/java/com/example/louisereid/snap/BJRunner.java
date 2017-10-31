@@ -11,7 +11,11 @@ public class BJRunner {
         Player player = new Player("Player 1");
         Deck deck = new Deck();
         Dealer dealer = new Dealer("Dealer", deck);
-        Game game = new Game(player, dealer, deck);
+        BlackJackGame game = new BlackJackGame(player, dealer, deck);
         game.start();
+        System.out.println();
+        System.out.println("===============");
+        System.out.println();
+        game.playAgain();
     }
 }
